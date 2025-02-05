@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "moniqa-thin";
+  src: url("Moniqa-BlackDisplay.otf") format("opentype"),
+    url("Moniqa-BlackDisplay.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "moniqa-thick";
+  src: url("Moniqa-BlackHeading.otf") format("opentype"),
+    url("Moniqa-BlackHeading.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.center {
+  justify-content: center;
+}
+.between {
+  justify-content: space-between;
+}
+header {
+  font-family: "Cabinet Grotesk", sans-serif;
+}
+header a {
+  color: #010101;
+}
+.title span:nth-child(odd),
+.title span:nth-child(even) {
+  color: black;
+  font-size: 25rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+.title span:nth-child(odd) {
+  font-family: "moniqa-thin";
+}
+.title span:nth-child(even) {
+  font-family: "moniqa-thick";
+}
