@@ -68,3 +68,23 @@ nav li:first-child {
 .sidebar a {
   width: 100%;
 }
+.sidebar li:first-child a {
+  padding-left: 75%;
+}
+.showOnMobile {
+  display: none;
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .showOnMobile {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
