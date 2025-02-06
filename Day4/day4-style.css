@@ -31,22 +31,63 @@
 .between {
   justify-content: space-between;
 }
+body {
+  background-color: #010101;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
 header {
   font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 0 0 3% 3%;
 }
 header a {
-  color: #010101;
+  color: #3f3f3f;
 }
-.title span:nth-child(odd),
-.title span:nth-child(even) {
-  color: black;
-  font-size: 25rem;
+nav a {
+  padding-left: 2rem;
+}
+.title {
+  color: white;
+  font-size: 10rem;
   letter-spacing: 1rem;
   text-transform: uppercase;
+  font-family: "moniqa-thin", serif;
+  z-index: 10;
+  margin-bottom: -1.5rem;
 }
-.title span:nth-child(odd) {
-  font-family: "moniqa-thin";
+#hero {
+  height: 120vh;
+  width: 100vw;
+  padding: 1rem 3rem 0;
+  text-align: center;
+  flex-direction: column;
+  justify-content: end;
 }
-.title span:nth-child(even) {
-  font-family: "moniqa-thick";
+.hero-img {
+  background-image: url("old.jpg");
+  width: 89%;
+  height: 100vh;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50% 50% 0 0;
+}
+#about {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+.about-card {
+  background-color: white;
+  height: 50vh;
+  width: 20vw;
+  border-radius: 7%;
 }
