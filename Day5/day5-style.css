@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+@font-face {
+  font-family: "durk";
+  src: url("Druk-Wide-Bold.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +79,13 @@ nav li:first-child {
 .showOnMobile {
   display: none;
 }
+.hero {
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  font-family: "durk";
+  color: rgb(55, 55, 55);
+}
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -81,10 +93,16 @@ nav li:first-child {
   .showOnMobile {
     display: block;
   }
+  .hero {
+    font-size: 3.5rem;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .sidebar {
     width: 100%;
+  }
+  .hero {
+    font-size: 2rem;
   }
 }
