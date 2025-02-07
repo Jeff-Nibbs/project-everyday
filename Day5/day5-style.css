@@ -95,6 +95,7 @@ nav li:first-child {
 }
 .hero h1 {
   text-transform: uppercase;
+  -webkit-text-stroke: 0.3rem black;
 }
 @media (max-width: 1250px) {
   .hero {
