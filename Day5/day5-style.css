@@ -5,6 +5,11 @@
   src: url("Druk-Wide-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "durk-thick";
+  src: url("DrukWide-Super-Trial.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +53,8 @@ nav a {
 }
 nav a:hover {
   background-color: #f0f0f0f0;
+  color: limegreen;
+  border-bottom: 2px solid limegreen;
 }
 nav li:first-child {
   margin-right: auto;
@@ -81,12 +88,21 @@ nav li:first-child {
 }
 .hero {
   text-align: center;
-  font-size: 5rem;
+  font-size: 7rem;
   letter-spacing: -0.3rem;
-  font-family: "durk";
-  color: rgb(55, 55, 55);
+  font-family: "durk-thick";
+  color: limegreen;
 }
-@media (max-width: 800px) {
+.hero h1 {
+  text-transform: uppercase;
+}
+@media (max-width: 1250px) {
+  .hero {
+    font-size: 5rem;
+    letter-spacing: -0.1rem;
+  }
+}
+@media (max-width: 950px) {
   .hideOnMobile {
     display: none;
   }
@@ -94,15 +110,16 @@ nav li:first-child {
     display: block;
   }
   .hero {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
-
-@media (max-width: 500px) {
-  .sidebar {
-    width: 100%;
-  }
+@media (max-width: 750px) {
   .hero {
     font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }
