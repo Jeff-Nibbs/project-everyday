@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "durk";
-  src: url("Druk-Wide-Bold.ttf") format("truetype");
+  src: url("/static/fonts/Druk-Wide-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "durk-thick";
-  src: url("DrukWide-Super-Trial.otf") format("opentype");
+  src: url("/static/fonts/DrukWide-Super-Trial.otf") format("opentype");
 }
 
 * {
@@ -18,7 +18,7 @@
 
 body {
   min-height: 100vh;
-  background-image: url(couch.jpg);
+  background-image: url("/static/images/couch.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,7 +95,7 @@ nav li:first-child {
 }
 .hero h1 {
   text-transform: uppercase;
-  -webkit-text-stroke: 0.3rem black;
+  -webkit-text-stroke: 0.1rem black;
 }
 @media (max-width: 1250px) {
   .hero {
@@ -117,6 +117,7 @@ nav li:first-child {
 @media (max-width: 750px) {
   .hero {
     font-size: 2rem;
+    letter-spacing: -0.01rem;
   }
 }
 @media (max-width: 400px) {
