@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="day7-style.css" />
+    <title>Day 7</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Funny Farms</a>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+          <li onclick="openSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000">
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg
+            ></a>
+          </li>
+        </ul>
+
+        <ul class="sidebar">
+          <li onclick="closeSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000">
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg
+            ></a>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero-text">
+          <h1>Funny Farms</h1>
+          <p>We got the produce</p>
+          <a href="#" class="btn">Shop</a>
+        </div>
+
+        <div class="hero-img">
+          <img src="/static/images/farm.jpg" alt="long rows of a farm" />
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+    <script src="day7.js"></script>
+  </body>
+</html>

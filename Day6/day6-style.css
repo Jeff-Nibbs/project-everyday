@@ -45,19 +45,22 @@ header a {
   height: 50vh;
   width: 20vw;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: saturate(180%) blur(10px);
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   border-bottom-left-radius: 7px;
-}
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .container {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), -1 -1 25px rgba(255, 255, 255, 0.1);
 }
 .navbar li:last-child {
   display: none;
 }
+
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 800px) {
   .navbar li {
     display: none;

@@ -1,14 +1,14 @@
 @font-face {
   font-family: "moniqa-thin";
-  src: url("Moniqa-BlackDisplay.otf") format("opentype"),
-    url("Moniqa-BlackDisplay.ttf") format("truetype");
+  src: url("/static/fonts/") format("opentype"),
+    url("/static/fonts/Moniqa-BlackDisplay.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "moniqa-thick";
-  src: url("Moniqa-BlackHeading.otf") format("opentype"),
-    url("Moniqa-BlackHeading.ttf") format("truetype");
+  src: url("/static/fonts/Moniqa-BlackHeading.otf") format("opentype"),
+    url("/static/fonts/Moniqa-BlackHeading.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

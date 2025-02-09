@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "moniqa-thick";
+  src: url("/static/fonts/Moniqa-BlackHeading.otf") format("opentype"),
+    url("/static/fonts/Moniqa-BlackHeading.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "moniqa-thin";
+  src: url("/static/fonts/") format("opentype"),
+    url("/static/fonts/Moniqa-BlackDisplay.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+a {
+  color: black;
+}
+img {
+  display: block;
+  width: 100%;
+}
+body {
+  position: relative;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  background-color: rgba(169, 196, 108, 0.5);
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul li {
+  margin: 0 2rem;
+}
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgba(0, 128, 0, 0.2);
+  width: 20vw;
+  height: 50vh;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 7px;
+}
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 10rem;
+  background-color: #f4ffc3;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235d8736' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-img {
+  width: 350px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+}
+.hero-img img {
+  border-radius: 50%;
+}
+.hero-img:hover {
+  transform: scale(1.05);
+}
+.hero-text h1 {
+  font-size: 10rem;
+  font-family: "moniqa-thick";
+  letter-spacing: -0.3rem;
+}
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3px solid green;
+  background-color: green;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 7px;
+  box-shadow: -1 -1 10px rgba(0, 0, 0, 0.1);
+}
