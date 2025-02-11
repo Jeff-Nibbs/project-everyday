@@ -143,7 +143,8 @@ header a {
   background-color: var(--dark-text);
   color: white;
 }
-#about {
+#about,
+#meet {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -154,7 +155,6 @@ header a {
   height: 100%;
   color: var(--light-bg);
   background-color: var(--dark-text);
-  border-radius: 150px 150px 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -162,28 +162,43 @@ header a {
   font-weight: 200;
   padding: 3rem;
 }
-.about-text h2 {
+.round-top {
+  border-radius: 150px 150px 0 0;
+}
+.about-text h2,
+.meet-text h2 {
   font-family: var(--font-title);
   font-weight: 200;
   font-size: 4.5rem;
   letter-spacing: -0.1rem;
 }
-.about-text p {
+.about-text p,
+.meet-text p {
   margin-top: 1rem;
-  line-height: 1.3;
+  line-height: 1.5;
   font-weight: 200;
   letter-spacing: 0.1rem;
 }
-.about-img-box {
+.about-img-box,
+.meet-img-box {
   width: 525px;
   height: 335px;
   overflow: hidden;
-  border-radius: 50px 0 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about-img-box img {
+.about-img-box {
+  border-radius: 50px 0 0 50px;
+}
+.meet-img-box {
+  border-radius: 0 50px 50px 0;
+}
+.about-img-box img,
+.meet-img-box img {
   display: block;
   width: 100%;
+}
+.round-bottom {
+  border-radius: 0 0 150px 150px;
 }
