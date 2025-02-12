@@ -259,3 +259,106 @@ header a {
   align-items: center;
   gap: 10rem;
 }
+.spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+}
+.spinner-images {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+}
+.spinner-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+  filter: brightness(80%);
+}
+.spinner-image {
+  width: 110px;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+  transition: width 0.7s;
+  -webkit-transition: width 0.7s;
+  -moz-transition: width 0.7s;
+}
+.spinner-images .spinner-image:first-child,
+.spinner-images .spinner-image:last-child {
+  height: 280px;
+}
+.spinner-images .spinner-image:nth-child(2),
+.spinner-images .spinner-image:nth-child(6) {
+  height: 360px;
+}
+.spinner-images .spinner-image:nth-child(3),
+.spinner-images .spinner-image:nth-child(4),
+.spinner-images .spinner-image:nth-child(5) {
+  height: 465px;
+}
+.spinner-image h2 {
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--light-bg);
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(270deg);
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+  font-family: var(--font-normal);
+  font-weight: 800;
+}
+.details {
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+}
+.details h3 {
+  text-align: left;
+  line-height: 44px;
+  color: var(--light-bg);
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+  display: none;
+}
+.details p {
+  text-align: left;
+  line-height: 44px;
+  color: var(--light-bg);
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+  display: none;
+}
+.spinner-image.active {
+  height: 550px !important;
+  width: auto;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7 ease;
+}
+.spinner-image.active img {
+  filter: brightness(60%);
+}
+.spinner-image.active h2 {
+  display: none;
+}
+.spinner-image.active .details p,
+.spinner-image.active .details h3 {
+  display: block;
+}
