@@ -50,6 +50,11 @@ header {
 header a {
   margin: 0 1rem;
   color: var(--dark-text);
+  transition: all 0.09s ease-in;
+}
+header a:hover {
+  border-bottom: 1px solid var(--cream-bg);
+  color: var(--cream-bg);
 }
 #hero {
   height: 100vh;
@@ -148,9 +153,10 @@ header a {
   vertical-align: middle;
   margin-top: 2rem;
   color: var(--dark-text);
+  transition: all 0.2s ease-in;
 }
 .btn:hover {
-  background-color: var(--dark-text);
+  background-color: var(--dark-bg);
   color: white;
 }
 #about,
@@ -224,11 +230,25 @@ header a {
 .meet-text .btn {
   color: var(--light-bg);
   border: 1px solid var(--light-bg);
+  transition: all 0.2s ease-in;
 }
 .icon {
   fill: var(--light-bg);
   margin-left: 1rem;
 }
+.meet-text .btn:hover {
+  color: var(--dark-text);
+  background-color: var(--light-bg);
+}
+.meet-text .btn:hover .icon {
+  fill: var(--dark-text);
+  animation-duration: 0.7s;
+  animation-name: pointDown;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 #contact {
   height: 100vh;
   margin: 2rem 1rem;
@@ -236,6 +256,10 @@ header a {
 }
 #contact a {
   color: var(--dark-text);
+  transition: all 0.2s ease-in;
+}
+#contact a:hover {
+  color: var(--cream-bg);
 }
 
 .footer-title {
@@ -386,4 +410,14 @@ header a {
   display: block;
   color: var(--light-bg);
   transition: 0.3s ease;
+}
+
+@keyframes pointDown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
 }
